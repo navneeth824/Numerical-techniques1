@@ -4,7 +4,7 @@ parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
 from print_matrix import printArr
 
-def gaussSeidel(AB):
+def gaussJacobi(AB):
     n = 6    # number of iterations
     o = len(AB)
     sol = [0]* o
@@ -28,6 +28,6 @@ if __name__ == "__main__":
         [6,2,30,92]
     ]
 
-    X = gaussSeidel(AB)
+    X = gaussJacobi(AB)
     print("solution :")
     printArr(X)

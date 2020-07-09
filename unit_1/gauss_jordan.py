@@ -13,7 +13,7 @@ def gaussJordan(n,matrix):
         print("==========")
         print("fixing a",x+1)
         for y in range(n):
-            if x == y:
+            if x == y or matrix[y][x] == 0:
                 continue
             axy = matrix[y][x]
             axx = matrix[x][x]
