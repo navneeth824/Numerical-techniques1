@@ -35,7 +35,7 @@ def getEquation(x,t,lam,U):
     Ai[len(U[0]) - 2] = c
     return Ai
 
-def cranicNicolson(l, h, k, endT, lam):
+def crankNicolson(l, h, k, endT, lam):
     nx = int((l/h) + 1)
     nt = int((endT/k) + 1)
     U = [[0 for i in range(nx)] for j in range(nt)]
@@ -66,4 +66,4 @@ if __name__ == "__main__":
     endT = 1/4
     k = 1/8
     lam  = k/(a*(h**2))
-    cranicNicolson(l,h, k, endT,lam)
+    crankNicolson(l,h, k, endT,lam)
