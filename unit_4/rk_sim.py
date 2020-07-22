@@ -1,5 +1,5 @@
-exp1 = "x + z" # f(x)
-exp2 = "x - y" # g(x)
+exp1 = "x + z" # f(x,y,z)
+exp2 = "x - y" # g(x,y,z)
 x0 = 0
 y0 = 0
 z0 = 1

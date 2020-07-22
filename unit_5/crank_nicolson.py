@@ -63,7 +63,7 @@ if __name__ == "__main__":
     l = 1
     h = 1/4
     a = 1
-    endT = 1/4
-    k = 1/8
+    endT = 1/3
+    k = 1/6
     lam  = k/(a*(h**2))
     crankNicolson(l,h, k, endT,lam)

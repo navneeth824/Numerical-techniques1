@@ -43,6 +43,6 @@ if __name__ == "__main__":
     a = 2  # alpha
     l = 4  # length
     h = 1
-    k = h / a
     T = 2  # till what time do you need
+    k = h / a
     hyperbolic(a, l, h, k, T)

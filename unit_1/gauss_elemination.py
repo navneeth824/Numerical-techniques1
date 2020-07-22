@@ -5,13 +5,6 @@ sys.path.append(parentdir)
 from fractions import Fraction
 from print_matrix import printAB, printArr
 
-matrix = [
-    [1,4,9,16],
-    [2,1,1,10],
-    [3,2,3,18]
-]
-n = len(matrix)
-
 def gaussElemination(n,matrix):
     sol = [0] * n
     print("matrix : ")
